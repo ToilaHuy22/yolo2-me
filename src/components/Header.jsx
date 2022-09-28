@@ -24,12 +24,12 @@ const homeNav = [
 ];
 
 const Header = () => {
-	const { pathName } = useLocation();
-
-	const activeNav = homeNav.findIndex((e) => e.path === pathName);
+	const { pathname } = useLocation();
+	const activeNav = homeNav.findIndex((e) => e.path === pathname);
 
 	const headerRef = useRef(null);
 
+	//Short header when scroll
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

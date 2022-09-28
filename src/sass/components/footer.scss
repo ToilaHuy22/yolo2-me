@@ -1,0 +1,55 @@
+.footer {
+	padding: 70px 0;
+	box-shadow: $box-shadow;
+	font-size: 1.25rem;
+
+	.container {
+	}
+
+	&__logo {
+		height: 40px;
+	}
+
+	&__about {
+		p {
+			margin-bottom: 0.5rem;
+			font-style: italic;
+			line-height: 2rem;
+
+			@include tablet {
+				text-align: center;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+
+		@include tablet {
+			margin-top: 1rem;
+		}
+
+		@include mobile {
+			margin-top: 2.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__content {
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__title,
+	&__content {
+		text-align: right;
+
+		@include tablet {
+			text-align: center;
+		}
+	}
+}

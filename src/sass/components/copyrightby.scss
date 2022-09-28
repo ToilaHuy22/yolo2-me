@@ -1,0 +1,21 @@
+.copyright {
+	background-color: $main-color;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+
+	p {
+		color: $main-bg;
+		font-style: italic;
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.1rem;
+
+		span {
+			font-weight: 600;
+			font-style: normal;
+		}
+
+		&:hover {
+			color: $main-bg !important;
+		}
+	}
+}
