@@ -1,0 +1,33 @@
+.policy-card {
+	@include flex(center, flex-start);
+	min-height: 120px;
+	padding: 20px;
+	box-shadow: $box-shadow;
+	border-left: 4px solid $main-bg;
+	transition: transform 0.5s ease;
+
+	&:hover {
+		transform: translateY(-20px);
+		border-left: 4px solid $main-color;
+	}
+
+	&__icon {
+		width: 30%;
+		color: $main-color;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	&__info {
+		&__name {
+			font-size: 1.5rem;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+
+		&__description {
+			font-size: 1.25rem;
+			color: $txt-main-color;
+		}
+	}
+}
