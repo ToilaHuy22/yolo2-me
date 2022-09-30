@@ -1,24 +1,24 @@
 const policy = [
-    {
-        name: "Miễn phí giao hàng",
-        description: "Miễn phí ship với đơn hàng > 239K",
-        icon: "bx bx-shopping-bag"
-    },
-    {
-        name: "Thanh toán COD",
-        description: "Thanh toán khi nhận hàng (COD)",
-        icon: "bx bx-credit-card"
-    },
-    {
-        name: "Khách hàng VIP",
-        description: "Ưu đãi dành cho khách hàng VIP",
-        icon: "bx bx-diamond"
-    },
-    {
-        name: "Hỗ trợ bảo hành",
-        description: "Đổi, sửa đồ tại tất cả store",
-        icon: "bx bx-donate-heart"
-    }
-]
+	{
+		name: 'Free ship',
+		description: 'Free shipping with orders > 11$',
+		icon: 'bx bx-shopping-bag',
+	},
+	{
+		name: 'COD payment',
+		description: 'Payment on receipt of goods (COD)',
+		icon: 'bx bx-credit-card',
+	},
+	{
+		name: 'VIP customers',
+		description: 'Special offers for VIP customers',
+		icon: 'bx bx-diamond',
+	},
+	{
+		name: 'Warranty support',
+		description: 'Change, fix things at all stores',
+		icon: 'bx bx-donate-heart',
+	},
+];
 
-export default policy
+export default policy;
