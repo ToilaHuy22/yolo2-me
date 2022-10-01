@@ -1,0 +1,86 @@
+.catalog {
+	@include flex(flex-start, flex-start);
+
+	&__filter {
+		width: 20%;
+		margin-right: 20px;
+		padding: 10px;
+
+		@include tablet {
+			width: 25%;
+			height: 100vh;
+			background-color: $main-bg;
+			padding: 3rem 1.5rem;
+			position: fixed;
+			left: 0;
+			top: $header-tablet-height;
+			z-index: 101;
+			box-shadow: $box-shadow;
+			transform: translateX(-100%);
+			transition: transform 0.3s ease;
+		}
+
+		@include mobile {
+			width: max-content;
+			height: 100vh;
+			background-color: $main-bg;
+			padding: 3rem 2rem;
+			position: fixed;
+			left: 0;
+			top: $header-mobile-height;
+			z-index: 101;
+			box-shadow: $box-shadow;
+			transform: translateX(-100%);
+			transition: transform 0.3s ease;
+		}
+
+		&.active {
+			transform: translate(0);
+		}
+
+		&__widget {
+			margin-bottom: 2rem;
+
+			&__title {
+				font-size: 1.5rem;
+				font-weight: 600;
+				text-transform: capitalize;
+				margin-bottom: 16px;
+			}
+
+			&__content {
+				color: $txt-second-color;
+				font-size: 1.25rem;
+
+				&__item {
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		&__close {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 0.5rem;
+			background-color: $main-color;
+			color: $main-bg;
+		}
+	}
+
+	&__content {
+		flex-grow: 1;
+		box-shadow: $box-shadow;
+	}
+
+	&__filter__toggle {
+		display: none;
+
+		@include tablet {
+			position: fixed;
+			z-index: 100;
+			display: block;
+			margin-bottom: 2rem;
+		}
+	}
+}

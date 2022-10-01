@@ -38,7 +38,7 @@ ProductCard.propTypes = {
 	name: PropTypes.string.isRequired,
 	price: PropTypes.string.isRequired,
 	slug: PropTypes.string.isRequired,
-	currency: PropTypes.string.isRequired,
+	currency: PropTypes.string,
 };
 
 export default ProductCard;
