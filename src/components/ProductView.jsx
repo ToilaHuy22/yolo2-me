@@ -63,16 +63,20 @@ const ProductView = (props) => {
 			return false;
 		}
 
-		if (color === undefined) {
-			alert('Please select a color');
+		if (color !== undefined && size === undefined) {
+			setValiColor('');
+			setValiSize('Please select a size');
 			return false;
 		}
 
-		if (size === undefined) {
-			alert('Please select a size');
+		if (color === undefined && size !== undefined) {
+			setValiSize('');
+			setValiColor('Please select a color');
 			return false;
 		}
 
+		setValiColor('');
+		setValiSize('');
 		return true;
 	};
 
@@ -246,6 +250,36 @@ const ProductView = (props) => {
 					>
 						Buy now
 					</Button>
+				</div>
+			</div>
+			<div className={`product-description mobile ${descriptionExpand ? 'expand' : ''}`}>
+				<div className="product-description__title">Product Details</div>
+				<div
+					className="product-description__content"
+					dangerouslySetInnerHTML={{ __html: product.description }}
+				></div>
+				<div className="product-description__toggle">
+					<>
+						{descriptionExpand === true ? (
+							<Button
+								size="sm"
+								icon="bx bx-chevrons-up"
+								animate={true}
+								onClick={() => setDescriptionExpand(!descriptionExpand)}
+							>
+								Hide away
+							</Button>
+						) : (
+							<Button
+								size="sm"
+								icon="bx bx-chevrons-down"
+								animate={true}
+								onClick={() => setDescriptionExpand(!descriptionExpand)}
+							>
+								Show more
+							</Button>
+						)}
+					</>
 				</div>
 			</div>
 		</div>

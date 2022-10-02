@@ -1,10 +1,18 @@
 .product {
 	@include flex(flex-start, flex-start);
 
+	@include mobile {
+		flex-direction: column;
+	}
+
 	&__images {
 		@include flex(flex-start, flex-start);
 		width: 60%;
 		flex-wrap: wrap;
+
+		@include mobile {
+			width: 100%;
+		}
 
 		&__list {
 			width: 20%;
@@ -35,9 +43,21 @@
 		top: $header-shrink-height;
 		padding-top: 2rem;
 
+		@include mobile {
+			width: 100%;
+			text-align: center;
+			position: static;
+		}
+
 		&__title {
 			font-size: 2.5rem;
 			font-weight: 600;
+
+			@include mobile {
+				font-size: 2.25rem;
+				margin-bottom: 0.75rem;
+				text-align: center;
+			}
 		}
 
 		&__item {
@@ -57,6 +77,11 @@
 
 			&__list {
 				@include flex(center, flex-start);
+				margin-bottom: 1rem;
+
+				@include mobile {
+					justify-content: center;
+				}
 
 				&__item {
 					@include flex(center, center);
@@ -89,8 +114,17 @@
 				}
 			}
 
+			label {
+				color: $txt-error;
+				font-style: italic;
+			}
+
 			&__quantity {
 				@include flex(flex-start, flex-start);
+
+				@include mobile {
+					justify-content: center;
+				}
 
 				&__btn {
 					@include flex(center, center);
@@ -114,6 +148,14 @@
 
 			button {
 				margin-right: 1rem;
+
+				@include tablet {
+					flex-direction: column;
+					margin-bottom: 1rem;
+					margin-right: 1rem;
+					min-width: 150px;
+					align-items: center;
+				}
 			}
 		}
 	}
@@ -125,6 +167,18 @@
 	height: 400px;
 	overflow: hidden;
 	position: relative;
+
+	&.mobile {
+		display: none;
+
+		@include mobile {
+			display: block;
+		}
+	}
+
+	@include mobile {
+		display: none;
+	}
 
 	&.expand {
 		height: max-content;
