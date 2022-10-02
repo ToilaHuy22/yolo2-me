@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import Button from './Button';
 
+import numberWithCommas from '../utils/numberWithCommas';
+
 const ProductCard = (props) => {
 	const currency = props.currency ? props.currency : '$';
 
@@ -17,9 +19,12 @@ const ProductCard = (props) => {
 				</div>
 				<h3 className="product-card__name">{props.name}</h3>
 				<div className="product-card__price">
-					{props.price} <span>{currency}</span>
+					{numberWithCommas(props.price)}
+					<span>{currency}</span>
 					<span className="product-card__price__old">
-						<del>15{currency}</del>
+						<del>
+							{numberWithCommas(15)} {currency}
+						</del>
 					</span>
 				</div>
 			</Link>
@@ -36,7 +41,7 @@ ProductCard.propTypes = {
 	img01: PropTypes.string.isRequired,
 	img02: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	price: PropTypes.string.isRequired,
+	price: PropTypes.number,
 	slug: PropTypes.string.isRequired,
 	currency: PropTypes.string,
 };

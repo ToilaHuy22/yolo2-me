@@ -5,7 +5,7 @@ const CopyRightBy = () => {
 		<div className="copyright">
 			<div className="container">
 				<p>
-					<a href="https://github.com/ToilaHuy22" target="_blank">
+					<a href="https://github.com/ToilaHuy22" rel="noreferrer" target="_blank">
 						Copyright by <span className="copyright__by">@ToilaHuy22</span>
 					</a>
 				</p>

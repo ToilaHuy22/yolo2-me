@@ -312,7 +312,7 @@ const products = [
 		image01: product_14_image_01,
 		image02: product_14_image_02,
 		categorySlug: 'ao-thun',
-		colors: ['yellow', 'white'],
+		colors: ['yellow', 'white', 'black'],
 		slug: 'dinosaur-t-shirt-14',
 		size: ['s', 'm', 'l', 'xl'],
 		description:

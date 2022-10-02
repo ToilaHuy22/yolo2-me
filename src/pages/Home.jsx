@@ -107,7 +107,7 @@ const Home = () => {
 				<SectionTitle>popular products</SectionTitle>
 				<SectionBody>
 					<Grid col={4} mdCol={2} smCol={1} gap={20}>
-						{productData.getRandomProducts(8).map((item, index) => (
+						{productData.getRandomProducts(12).map((item, index) => (
 							<ProductCard
 								key={index}
 								img01={item.image01}
