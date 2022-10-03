@@ -59,7 +59,7 @@ const InfinityProduct = (props) => {
 						img01={item.image01}
 						img02={item.image02}
 						name={item.title}
-						price={item.price}
+						price={Number(item.price)}
 						slug={item.slug}
 						currency={item.currency}
 					/>

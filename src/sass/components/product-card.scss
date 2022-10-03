@@ -55,4 +55,10 @@
 			font-weight: 300;
 		}
 	}
+
+	&__btn {
+		@include mobile {
+			display: none;
+		}
+	}
 }

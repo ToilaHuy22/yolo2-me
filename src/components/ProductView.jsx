@@ -8,6 +8,8 @@ import { remove } from '../redux/product-modal/productModalSlice';
 
 import Button from './Button';
 
+import numberWithCommas from '../utils/numberWithCommas';
+
 const ProductView = (props) => {
 	const dispatch = useDispatch();
 
@@ -17,13 +19,8 @@ const ProductView = (props) => {
 		product = {
 			title: '',
 			price: '',
-			image01: null,
-			image02: null,
-			categorySlug: '',
 			colors: [],
 			size: [],
-			slug: '',
-			description: '',
 		};
 
 	const [previewImg, setPreviewImg] = useState(product.image01);
@@ -171,7 +168,7 @@ const ProductView = (props) => {
 				<h1 className="product__info__title">{product.title}</h1>
 				<div className="product__info__item">
 					<span className="product__info__item__price">
-						{product.price}
+						{numberWithCommas(product.price)}
 						{product.currency}
 					</span>
 				</div>

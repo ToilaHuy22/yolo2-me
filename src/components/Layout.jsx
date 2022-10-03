@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import CopyRightBy from './CopyRightBy';
+import ProductViewModal from './ProductViewModal';
 
 import Routes from '../routes/Routes';
 
@@ -21,6 +22,7 @@ const Layout = () => {
 						</div>
 						<Footer />
 						<CopyRightBy />
+						<ProductViewModal />
 					</div>
 				)}
 			/>

@@ -74,7 +74,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur T-shirt 02',
-		price: '7.5',
+		price: '7',
 		currency: '$',
 		image01: product_02_image_01,
 		image02: product_02_image_02,
@@ -87,7 +87,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur T-shirt 03',
-		price: '9.2',
+		price: '9',
 		currency: '$',
 		image01: product_03_image_01,
 		image02: product_03_image_02,
@@ -100,7 +100,7 @@ const products = [
 	},
 	{
 		title: 'Polo T-shirt 04',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_04_image_01,
 		image02: product_04_image_02,
@@ -113,7 +113,7 @@ const products = [
 	},
 	{
 		title: 'Polo T-shirt 05',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_05_image_01,
 		image02: product_05_image_02,
@@ -126,7 +126,7 @@ const products = [
 	},
 	{
 		title: 'Polo T-shirt 06',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_06_image_01,
 		image02: product_06_image_02,
@@ -139,7 +139,7 @@ const products = [
 	},
 	{
 		title: 'Somi checkered shirt 07',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_07_image_01,
 		image02: product_07_image_02,
@@ -152,7 +152,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi shirt 08',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_08_image_01,
 		image02: product_08_image_02,
@@ -165,7 +165,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 9',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_09_image_01,
 		image02: product_09_image_02,
@@ -178,7 +178,7 @@ const products = [
 	},
 	{
 		title: 'Stylish jeans 10',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_10_image_01,
 		image02: product_10_image_02,
@@ -191,7 +191,7 @@ const products = [
 	},
 	{
 		title: 'Jeans 11',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_11_image_01,
 		image02: product_11_image_02,
@@ -204,7 +204,7 @@ const products = [
 	},
 	{
 		title: 'Jeans 12',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_12_image_01,
 		image02: product_12_image_02,
@@ -230,7 +230,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur T-shirt 14',
-		price: '7.5',
+		price: '7',
 		currency: '$',
 		image01: product_02_image_01,
 		image02: product_02_image_02,
@@ -243,7 +243,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur T-shirt 15',
-		price: '9.2',
+		price: '9',
 		currency: '$',
 		image01: product_03_image_01,
 		image02: product_03_image_02,
@@ -256,7 +256,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 16',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_08_image_01,
 		image02: product_08_image_02,
@@ -269,7 +269,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 17',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_09_image_01,
 		image02: product_09_image_02,
@@ -282,7 +282,7 @@ const products = [
 	},
 	{
 		title: 'Stylish jeans 18',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_10_image_01,
 		image02: product_10_image_02,
@@ -295,7 +295,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur long sleeve 13',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_13_image_01,
 		image02: product_13_image_02,
@@ -308,7 +308,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur T-shirt 14',
-		price: '9.5',
+		price: '9',
 		image01: product_14_image_01,
 		image02: product_14_image_02,
 		categorySlug: 'ao-thun',
@@ -320,7 +320,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur Polo 15',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_15_image_01,
 		image02: product_15_image_02,
@@ -333,7 +333,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur Polo 16',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_16_image_01,
 		image02: product_16_image_02,
@@ -346,7 +346,7 @@ const products = [
 	},
 	{
 		title: 'Dinosaur Polo 17',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_17_image_01,
 		image02: product_17_image_02,
@@ -359,7 +359,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 18',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_18_image_01,
 		image02: product_18_image_02,
@@ -372,7 +372,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 19',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_19_image_01,
 		image02: product_19_image_02,
@@ -385,7 +385,7 @@ const products = [
 	},
 	{
 		title: 'Long sleeve somi 20',
-		price: '9.5',
+		price: '9',
 		currency: '$',
 		image01: product_20_image_01,
 		image02: product_20_image_02,
@@ -399,13 +399,6 @@ const products = [
 ];
 
 const getAllProducts = () => products;
-
-// const getProducts = (count) => {
-// 	const max = products.length - count;
-// 	const min = 0;
-// 	const start = Math.floor(Math.random() * (max - min) + min);
-// 	return products.slice(start, start + count);
-// };
 
 const getRandomProducts = (count) => {
 	const max = products.length - count;
